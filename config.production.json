@@ -1,0 +1,50 @@
+{
+  "url": "http://localhost:2368/",
+  "server": {
+    "port": 2368,
+    "host": "127.0.0.1"
+  },
+  "database": {
+    "client": "sqlite3",
+    "connection": {
+      "filename": "C:\\Users\\Bhanu\\Documents\\ghost-admin\\content\\data\\ghost-local.db"
+    }
+  },
+  "mail": {
+    "transport": "Direct"
+  },
+  "logging": {
+    "transports": [
+      "file",
+      "stdout"
+    ]
+  },
+  "process": "local",
+  "paths": {
+    "contentPath": "C:\\Users\\Bhanu\\Documents\\ghost-admin\\content"
+  },
+  "storage": {
+    "active": "ghost-storage-cloudinary",
+    "ghost-storage-cloudinary": {
+      "useDatedFolder": false,
+      "auth": {
+        "cloud_name": "noonnonono",
+        "api_key": "315611339918611",
+        "api_secret": "hfnLPsxPLYMDdiY8HqgipPRb5-U"
+      },
+      "upload": {
+        "use_filename": true,
+        "unique_filename": false,
+        "overwrite": false,
+        "folder": "blog-images",
+        "tags": ["blog"]
+      },
+      "fetch": {
+        "quality": "auto",
+        "secure": true,
+        "cdn_subdomain": true
+      }
+    }
+  }
+
+}
